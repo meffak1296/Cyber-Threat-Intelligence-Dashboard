@@ -101,7 +101,7 @@ Enterprise Security Operations Center (SOC)
 def load_data():
 
     df = pd.read_csv(
-        "cicids2017_cleaned.csv",
+        "cicids2017_sample.csv",
         skiprows=lambda x: x > 0 and x % 20 != 0,
         low_memory=True
     )
